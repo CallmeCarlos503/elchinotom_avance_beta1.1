@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comidachina"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="540dp"
+        android:src="@drawable/tomchino"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area de registro"
+        android:textColor="@color/black"
+        android:textSize="100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/btnregistrarse"
+        android:layout_width="299dp"
+        android:layout_height="46dp"
+        android:background="@drawable/botones"
+        android:text="registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="480dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_style"
+        android:drawableStart="@drawable/usuario"
+        android:ems="10"
+        android:hint="  usuario"
+        android:inputType="text"
+        android:textColor="#010101"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+
+        android:id="@+id/correo"
+        android:layout_width="480dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_style"
+        android:drawableStart="@drawable/mail"
+        android:ems="10"
+        android:hint="  Correo electronico"
+        android:inputType="textEmailAddress"
+        android:textColor="#010101"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuario"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="480dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/edittext_style"
+        android:drawableStart="@drawable/password"
+        android:ems="10"
+        android:hint="  contrasena"
+        android:inputType="textPassword"
+        android:textColor="#010101"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
